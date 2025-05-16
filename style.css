@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
+  gap: 2px;
+  border: 2px solid #444;
+  margin-bottom: 20px;
+}
+
+.board div {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border: 1px solid #999;
+  background-color: #fff;
+  position: relative;
+}
+
+.board .question {
+  background-color: #00aaff !important;
+}
+
+.pion {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.p1 {
+  background-color: red;
+  top: 5px;
+  left: 5px;
+}
+
+.p2 {
+  background-color: yellow;
+  bottom: 5px;
+  right: 5px;
+}
+
+.dice-area {
+  margin-bottom: 20px;
+}
+
+#diceResult {
+  font-size: 24px;
+  color: #222;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.question-box {
+  background-color: #ffffffcc;
+  border: 2px solid #444;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#questionText {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#options button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #88c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#timer {
+  font-size: 20px;
+  color: red;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
