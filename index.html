@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ular Tangga Edukatif</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Game Ular Tangga Edukatif</h1>
+
+    <div class="board" id="board"></div>
+
+    <div class="dice-area">
+      <button id="rollDice">Lempar Dadu</button>
+      <div id="diceResult"></div>
+    </div>
+
+    <div class="question-box hidden" id="questionBox">
+      <div id="questionText"></div>
+      <div id="options"></div>
+      <div id="timer">10</div>
+    </div>
+
+    <div class="status">
+      <p>Giliran: <span id="currentPlayer">Pemain 1</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
